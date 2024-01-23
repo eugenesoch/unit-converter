@@ -1,6 +1,12 @@
 
 UNIT CONVERTER
 
+Requirements:
+
+Follow the design spec on Figma
+Generate all conversions when user clicks "Convert"
+Round the numbers down to three decimal places
+
 /*
 1 meter = 3.281 feet
 1 liter = 0.264 gallon
