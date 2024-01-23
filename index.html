@@ -1,0 +1,35 @@
+<html data-theme="light">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="module">
+            <h1>Generate a<br><span>random password</span></h1>
+            <p class="subheading">Never use an insecure password again.</p>
+            <div class="button-wrapper">
+                <button onclick="generateRandomPasswords()" id="button-el">Generate Passwords</button>
+            </div>
+            <divider></divider>
+            <div class="output-wrapper">
+                <div>
+                    <p class="output" id="password-el1">
+                        Output
+                    </p>
+                </div>
+                <div>
+                    <p class="output" id="password-el2">
+                        Output
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="theme-toggle" class="theme-switch"></button>
+        
+        <script src="./index.js"></script>
+        <script src="./index.js" tyoe="module"></script>
+    </body>
+</html>
