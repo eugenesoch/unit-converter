@@ -2,23 +2,26 @@ const convertEl = document.getElementById("convert-el")
 const lengthEl = document.getElementById("length-el")
 const volumeEl = document.getElementById("volume-el")
 const weightEl = document.getElementById("weight-el")
-
-
+let lengthMultiplier = 3.281
+const volumeMultiplier = 0.264
+const weightMultiplier = 2.204
 
 function calculation(inputValue, dimensionRatio) {
     multipliedValue = inputValue * dimensionRatio
     dividedValue = inputValue / dimensionRatio
-    //return multipliedValue, dividedValue 
-    console.log(multipliedValue, dividedValue)
     }
 
 convertEl.addEventListener("click", function() {
-    let inputEl = document.getElementById("input-el").value
-    calculation(inputEl, 3.281)
+    let inputEl = document.getElementById("input-el").value 
+    calculation(inputEl, lengthMultiplier)
     lengthEl.innerHTML = `<p>${inputEl} meters = ${multipliedValue.toFixed(3)} feet | ${inputEl} feet = ${dividedValue.toFixed(3)} meters</p>`
+    calculation(inputEl, volumeMultiplier)
+    volumeEl.innerHTML = `<p>${inputEl} liters = ${multipliedValue.toFixed(3)} gallons | ${inputEl} gallons = ${dividedValue.toFixed(3)} liters</p>`
+    calculation(inputEl, weightMultiplier)
+    weightEl.innerHTML = `<p>${inputEl} kilos = ${multipliedValue.toFixed(3)} pounds | ${inputEl} pounds = ${dividedValue.toFixed(3)} kilos</p>`
+
 
 })
-
 
 // var toggle = document.getElementById("theme-toggle");
 
