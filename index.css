@@ -49,12 +49,14 @@ body {
     display: flex;
     flex-direction: column;;
     justify-content: center;
-    align-items: center;
     height: 100svh;
+
 }
 
 .wrapper {
     padding: 3rem 1.5rem;
+    max-width: 40rem;
+    margin: auto auto;
 }
 
 .hero {
