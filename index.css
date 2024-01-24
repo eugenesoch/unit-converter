@@ -50,8 +50,7 @@ body {
     flex-direction: column;;
     justify-content: center;
     align-content: center;
-    height: 100svh;
-
+    min-height: 100svh;
 }
 
 .wrapper {
