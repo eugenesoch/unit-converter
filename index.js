@@ -2,7 +2,7 @@ const convertEl = document.getElementById("convert-el")
 const lengthEl = document.getElementById("length-el")
 const volumeEl = document.getElementById("volume-el")
 const weightEl = document.getElementById("weight-el")
-let lengthMultiplier = 3.281
+const lengthMultiplier = 3.281
 const volumeMultiplier = 0.264
 const weightMultiplier = 2.204
 
