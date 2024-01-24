@@ -1,5 +1,5 @@
 let inputEl = document.getElementById("input-el")
-inputEl.textContent=("Bravo")
+inputEl.value ="";
 
 
 
