@@ -20,24 +20,25 @@ convertEl.addEventListener("click", function() {
     calculation(inputEl, weightMultiplier)
     weightEl.innerHTML = `<p>${inputEl} kilos = ${multipliedValue.toFixed(3)} pounds | ${inputEl} pounds = ${dividedValue.toFixed(3)} kilos</p>`
 
-
 })
 
-// var toggle = document.getElementById("theme-toggle");
+let toggle = document.getElementById("theme-toggle");
 
-// var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-// if (storedTheme)
-//     document.documentElement.setAttribute('data-theme', storedTheme)
+let storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+if (storedTheme)
+    document.documentElement.setAttribute('data-theme', storedTheme)
 
 
-// toggle.onclick = function() {
-//     var currentTheme = document.documentElement.getAttribute("data-theme");
-//     var targetTheme = "light";
+toggle.onclick = function() {
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let targetTheme = "light";
+    toggle.innerHTML = `<i class="fa-solid fa-sun">`
+    
+    if (currentTheme === "light") {
+        targetTheme = "dark";
+        toggle.innerHTML = `<i class="fa-solid fa-moon"></i>`
+    }
 
-//     if (currentTheme === "light") {
-//         targetTheme = "dark";
-//     }
-
-//     document.documentElement.setAttribute('data-theme', targetTheme)
-//     localStorage.setItem('theme', targetTheme);
-// };
+    document.documentElement.setAttribute('data-theme', targetTheme)
+    localStorage.setItem('theme', targetTheme);
+};
