@@ -104,6 +104,7 @@ button {
     margin-top: 2rem;
     padding: 0.75rem 2rem;
     cursor: pointer;
+    color: var(--body)
 }
 
 .content {
