@@ -37,15 +37,20 @@ html[data-theme="dark"] {
 }
 
 body {
-    display: flex;
-    flex-direction: column;;
-    justify-content: center;
-    align-items: center;
+
     background-color: var(--body);
     margin: 0;
     font-family: 'Inter', sans-serif;
     text-align: center;
     
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
 }
 
 .wrapper {
