@@ -34,8 +34,11 @@ Weight 2.204 - variable weightRadio
 
 Calculation 
 
-inputNum * dimensionRatio
-inputNum / dimensionRatio
+inputNum * dimensionRatio = multipliedValue
+inputNum / dimensionRatio = dividedValue
+
+
+
 
 
 Calculations
